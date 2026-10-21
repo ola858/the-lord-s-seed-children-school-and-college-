@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="The Lord Seed Children School and College — nurturing minds, building character, and growing tomorrow's leaders.">
+<title>The Lord Seed Children School and College</title>
+<style>
+:root{--green:#145b38;--deep:#093a25;--gold:#f4c542;--cream:#fffaf0;--ink:#203027;--muted:#65746a;--white:#fff}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+header{background:var(--deep);color:white;position:sticky;top:0;z-index:10;box-shadow:0 3px 12px #0002}
+.topbar{max-width:1180px;margin:auto;padding:13px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;line-height:1.2}
+.crest{width:48px;height:48px;display:grid;place-items:center;background:var(--gold);color:var(--deep);border-radius:50%;font-size:25px;border:3px solid #fff}
+.brand small{display:block;color:#f9dfa0;font-size:11px;letter-spacing:1.5px;margin-top:5px}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+nav a{color:white;text-decoration:none;font-size:13px;font-weight:700;padding:8px 10px;border-radius:7px}
+nav a:hover,nav a:focus{background:var(--gold);color:var(--deep)}
+section{scroll-margin-top:90px}
+.hero{background:linear-gradient(110deg,#093a25d9,#145b38a8),url('images/school-compound.jpg') center/cover;min-height:520px;display:flex;align-items:center;color:white}
+.hero-inner{max-width:1180px;margin:auto;padding:65px 24px;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}
+.eyebrow{color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}
+h1{font-size:clamp(35px,5vw,60px);line-height:1.08;margin:14px 0 20px}
+.hero p{font-size:18px;max-width:620px;color:#f1f8f3}
+.btn{display:inline-block;background:var(--gold);color:var(--deep);padding:12px 19px;border-radius:7px;text-decoration:none;font-weight:800;margin:8px 8px 0 0}
+.btn.alt{background:transparent;border:2px solid white;color:white}
+.visual{min-height:290px;border:2px dashed #ffffffa8;background:#ffffff12;border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:25px}
+.visual strong{display:block;font-size:22px}
+.wrap{max-width:1180px;margin:auto;padding:65px 22px}
+.section-head{text-align:center;max-width:760px;margin:0 auto 35px}
+.section-head h2{font-size:clamp(28px,4vw,40px);color:var(--deep);margin:0 0 10px}
+.section-head p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:white;border:1px solid #e3eae4;border-radius:14px;padding:25px;box-shadow:0 8px 22px #092c1710}
+.card .icon{font-size:31px}
+.card h3{color:var(--green);margin:10px 0}
+.tint{background:var(--cream)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
+.compound{background:#e7f3e9;border-radius:18px;padding:18px;min-height:320px;overflow:hidden}
+.sky{height:70px;background:#bce4f7;border-radius:10px 10px 0 0;text-align:right;padding:10px;font-size:26px}
+.school-building{background:#f4dba2;border:4px solid #c78c36;text-align:center;padding:25px 10px 12px;color:#3e321e;font-weight:bold}
+.roof{height:0;border-left:130px solid transparent;border-right:130px solid transparent;border-bottom:45px solid #b84e3b;margin:auto;width:0}
+.windows{display:flex;justify-content:center;gap:14px;margin:15px}
+.windows span{display:block;background:#9bd1ed;width:35px;height:45px;border:3px solid #fff}
+.door{width:40px;height:58px;background:#8a5938;margin:auto;border-radius:4px 4px 0 0}
+.lawn{height:50px;background:#5aa65b;text-align:center;padding:12px;color:white;font-weight:bold}
+.photo-card{min-height:200px;border:1px solid #dce7df;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 8px 22px #092c1710;display:flex;flex-direction:column}.photo-card img{width:100%;height:200px;object-fit:cover;display:block}.photo-card strong{padding:12px 14px;color:var(--green)}\n.placeholder{min-height:220px;border:2px dashed #b5c7ba;border-radius:12px;display:grid;place-items:center;text-align:center;padding:18px;background:#f7fbf7;color:#52705d}
+.placeholder span{font-size:36px;display:block}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery .placeholder{min-height:200px}
+.staff{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.staff .placeholder{min-height:180px}
+.pill{display:inline-block;background:#e7f4e9;color:var(--green);padding:6px 11px;border-radius:30px;font-size:12px;font-weight:800;margin:4px}
+.notice{background:#fff5cf;border-left:5px solid var(--gold);padding:18px;border-radius:8px}
+form{display:grid;gap:12px}
+input,textarea,select{width:100%;padding:13px;border:1px solid #ccd8cf;border-radius:7px;font:inherit}
+button{border:0;cursor:pointer;font:inherit}
+footer{background:var(--deep);color:#e8f2eb;padding:35px 22px}
+.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+footer a{color:var(--gold)}
+.small{font-size:13px;color:var(--muted)}
+@media(max-width:850px){.topbar{align-items:flex-start;flex-direction:column}nav{justify-content:flex-start}nav a{padding:7px 8px}.hero-inner,.split{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.staff{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards,.gallery{grid-template-columns:1fr}.hero{min-height:0}.hero-inner{padding:45px 20px}.wrap{padding:45px 18px}.staff{grid-template-columns:1fr 1fr}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="topbar">
+  <div class="brand"><div class="crest">🌱</div><div>THE LORD SEED CHILDREN SCHOOL <br>&amp; COLLEGE<small>RAISING GODLY CHILDREN</small></div></div>
+  <nav aria-label="Main navigation">
+   <a href="#home">Home</a><a href="#about">About</a><a href="#academics">Academics</a><a href="#compound">Our Compound</a><a href="#students">Students</a><a href="#staff">Staff</a><a href="#admission">Admissions</a><a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div><div class="eyebrow">Welcome to our school</div><h1>Growing Bright Minds. <span style="color:var(--gold)">Shaping Great Futures.</span></h1>
+   <p>At The Lord Seed Children School and College, we aim to nurture confident learners, build strong character, and help every child discover their gifts.</p>
+   <a class="btn" href="#admission">Explore Admissions</a><a class="btn alt" href="#about">Discover Our School</a>
+  </div>
+  <div class="visual"><div><div style="font-size:62px">🏫 🌳 📚</div><strong>Our School Compound</strong><p>Welcome to The Lord Seed Children School and College.</p></div></div>
+ </div>
+</section>
+<section id="about"><div class="wrap">
+ <div class="section-head"><h2>Welcome to The Lord Seed</h2><p>A caring learning community where children are encouraged to learn, grow, and prepare for a meaningful future.</p></div>
+ <div class="split"><div><h3>Education with purpose</h3><p>We believe every child has potential. Our school website is designed to share our school life, academic programmes, staff, students, and admission information with parents and the wider community.</p><p><strong>Our vision:</strong> To nurture responsible, knowledgeable, confident, and compassionate learners.</p><p><strong>Our mission:</strong> To provide a supportive environment for learning, creativity, discipline, and personal growth.</p><div><span class="pill">Respect</span><span class="pill">Discipline</span><span class="pill">Knowledge</span><span class="pill">Excellence</span></div></div>
+  <div class="placeholder"><div><span>📷</span><strong>Add a photo of the school founder or school entrance</strong><p>Replace this box with your photo when you are ready.</p></div></div></div>
+</div></section>
+<section class="tint" id="academics"><div class="wrap">
+ <div class="section-head"><h2>Academic Programmes</h2><p>Update these programme descriptions to match the classes and curriculum your school offers.</p></div>
+ <div class="cards">
+  <article class="card"><div class="icon">🧸</div><h3>Early Years</h3><p>A warm, playful introduction to language, numbers, creativity, social skills, and discovery.</p></article>
+  <article class="card"><div class="icon">📚</div><h3>Primary Education</h3><p>Building strong foundations in literacy, numeracy, science, communication, and independent learning.</p></article>
+  <article class="card"><div class="icon">🎓</div><h3>College / Secondary</h3><p>Encouraging critical thinking, academic progress, leadership, responsibility, and preparation for the next stage.</p></article>
+ </div>
+</div></section>
+<section id="compound"><div class="wrap">
+ <div class="section-head"><h2>Explore Our School Compound</h2><p>A welcoming and safe environment for learning, friendship, and play.</p></div>
+ <div class="split"><div class="compound" aria-label="Illustration of a school compound"><div class="sky">☀️ ☁️</div><div class="roof"></div><div class="school-building">THE LORD SEED SCHOOL<div class="windows"><span></span><span></span><span></span></div><div class="door"></div></div><div class="lawn">🌳 &nbsp; School Grounds &nbsp; 🌳</div></div>
+ <div><h3>A place to learn and belong</h3><p>Use this section to show your actual school buildings, classrooms, playground, assembly area, library, and other facilities.</p><div class="notice"><strong>How to add your real photos:</strong><br>Make a folder called <code>images</code> beside this HTML file. Add your compound photo as <code>school-compound.jpg</code>. You can replace the illustrated compound with your own images in the gallery below.</div></div></div>
+ <div style="height:25px"></div><div class="gallery">
+  <div class="photo-card"><img src="images/school-compound.jpg" alt="School compound with trees and paved grounds"><strong>School Compound</strong></div>
+  <div class="placeholder"><div><span>🪑</span><strong>Classrooms</strong><p>Add classroom photo</p></div></div>
+  <div class="placeholder"><div><span>🌳</span><strong>Playground / School Grounds</strong><p>Add grounds photo</p></div></div>
+ </div>
+</div></section>
+<section class="tint" id="students"><div class="wrap">
+ <div class="section-head"><h2>Our Students</h2><p>Celebrating curiosity, creativity, friendship, and achievement.</p></div>
+ <div class="gallery">
+  <div class="photo-card"><img src="images/school-staff-1.jpg" alt="School community photo supplied by the school"><strong>School Community</strong></div>
+  <div class="photo-card"><img src="images/students-classroom.jpg" alt="Students learning in a classroom"><strong>Students in Class</strong></div>
+  <div class="placeholder"><div><span>🏆</span><strong>Activities & Achievements</strong><p>Add event or award photos</p></div></div>
+ </div>
+ <p class="small">Please get parent/guardian permission before publishing identifiable photos of children online.</p>
+</div></section>
+<section id="staff"><div class="wrap">
+ <div class="section-head"><h2>Meet Our Staff</h2><p>Dedicated educators and team members supporting every learner.</p></div>
+ <div class="staff">
+  <div class="placeholder"><div><span>👩‍🏫</span><strong>Staff Member 1</strong><p>Name • Role</p></div></div>
+  <div class="placeholder"><div><span>👨‍🏫</span><strong>Staff Member 2</strong><p>Name • Role</p></div></div>
+  <div class="placeholder"><div><span>👩‍💼</span><strong>Staff Member 3</strong><p>Name • Role</p></div></div>
+  <div class="placeholder"><div><span>🧑‍🏫</span><strong>Staff Member 4</strong><p>Name • Role</p></div></div>
+ </div>
+ <p class="small">Add staff names, positions, and approved photographs in these spaces.</p>
+</div></section>
+<section class="tint" id="admission"><div class="wrap">
+ <div class="section-head"><h2>Admissions</h2><p>We welcome enquiries from parents and guardians who are looking for a supportive school community.</p></div>
+ <div class="split"><div><h3>Start your child's journey with us</h3><p>Contact the school to ask about available classes, admission requirements, fees, school hours, and the documents needed for registration.</p><ul><li>Ask about available classes and entry requirements.</li><li>Arrange a school visit.</li><li>Speak with the admissions team.</li></ul><a class="btn" href="#contact">Contact the School</a></div>
+ <div class="card"><h3>Admission enquiry checklist</h3><p>☐ Child's full name and date of birth</p><p>☐ Class applying for</p><p>☐ Parent or guardian contact details</p><p>☐ Previous school details (if applicable)</p><p class="small">This is an enquiry checklist, not an official application form.</p></div></div>
+</div></section>
+<section id="contact"><div class="wrap">
+ <div class="section-head"><h2>Contact Us</h2><p>We would be happy to hear from parents, guardians, and members of our community.</p></div>
+ <div class="split"><div><div class="card"><h3>School Information</h3><p><strong>School:</strong> The Lord Seed Children School and College</p><p><strong>Address:</strong> Ikegun, Ibeju-Lekki, Lagos State, Nigeria</p><p><strong>Phone:</strong> 0905 492 0935</p><p><strong>Email:</strong> Please contact us by phone</p><p><strong>Opening hours:</strong> Add school days and hours</p></div><p class="small">The details above are placeholders. Replace them with the school's correct contact information before publishing.</p></div>
+ <div class="card"><h3>Send an Enquiry</h3><form onsubmit="event.preventDefault();alert('Thank you for your enquiry. This sample form is not connected to email yet. Please add a form service or backend before publishing.');"><label>Your name<input required placeholder="Parent or guardian name"></label><label>Email or phone<input required placeholder="How we can contact you"></label><label>Enquiry type<select><option>Admissions</option><option>School information</option><option>Other</option></select></label><label>Message<textarea rows="4" required placeholder="Write your message"></textarea></label><button class="btn" type="submit">Submit Enquiry</button></form></div></div>
+</div></section>
+</main>
+<footer><div class="footer-inner"><div><strong>THE LORD SEED CHILDREN SCHOOL &amp; COLLEGE</strong><br><span>Learning • Character • Excellence</span></div><div>© <span id="year"></span> The Lord Seed Children School and College.<br>All rights reserved.</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
